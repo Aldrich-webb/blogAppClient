@@ -164,7 +164,7 @@ const UserView = () => {
             
             <div className="d-flex gap-2">
               <button type="submit" className="btn btn-primary px-4">
-                {editMode ? "Update Post HAHA" : "Create Post"}
+                {editMode ? "Update Post" : "Create Post"}
               </button>
               {editMode && (
                 <button 
