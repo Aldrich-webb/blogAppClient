@@ -7,15 +7,10 @@ const Register = () => {
 	const [username, setUsername] = useState("");
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
-	// const [confirmPassword, setConfirmPassword] = useState("");
 	const navigate = useNavigate();
 
 	const handleRegister = async (e) => {
 		e.preventDefault();
-
-		// if (password !== confirmPassword) {
-		// 	return toast.error("Passwords do not match.");
-		// }
 
 		try {
 			const response = await API.post("/users/register", {
